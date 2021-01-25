@@ -1,6 +1,8 @@
-
-<div repeat.for="i of 5">
-  <test fire-ref="user/${i}" />
-</div>
-
-
+<details>
+  <summary>Fire Database</summary>
+  <fire-database repeat.for="i of 5" fire-ref="user/${i}" />
+</details>
+<details>
+  <summary>Fire Store</summary>
+  <fire-store repeat.for="i of 5" fire-ref="user/${i}" />
+</details>

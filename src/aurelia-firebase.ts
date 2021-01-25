@@ -80,6 +80,7 @@ class AureliaFireBase implements IRegistry {
       }
 
       if (this.firebaseConfiguration.enableAuth) {
+        await import('firebase/auth');
         c.register(Registration.instance(IFireBaseAuth, firebaseApp.auth()));
       }
 
